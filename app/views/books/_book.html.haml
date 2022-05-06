@@ -1,0 +1,8 @@
+%tr{:id => "#{dom_id book}"}
+  %td.pr-4
+    = book.title
+
+  %td
+    = book.author
+
+    -# = link_to "#{book.title} - #{book.author}", book_path(book), data: {turbo: false}
