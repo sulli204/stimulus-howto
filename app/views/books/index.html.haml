@@ -4,8 +4,8 @@
   %div.w-full.max-w-xs
     = form_with(url: books_path, method: :get, class: "bg-white shadow-lg rounded px-8 pt-6 pb-6 mb-4", data: { turbo_frame: "books" }) do |f|
       %div.mb-4.space-y-3
-        %span.mr-16.bg-blue-400.text-white.py-1.px-3.rounded-full Title
-        %span.py-1.px-3 Author
+        %span.py-1.px-3.cursor-pointer.mr-16.bg-blue-400.text-white.rounded-full Title
+        %span.py-1.px-3.cursor-pointer Author
 
         %div.space-y-3
           = f.label :title, "Search by Title", class: "block text-gray-500 text-sm font-bold mb-2"
